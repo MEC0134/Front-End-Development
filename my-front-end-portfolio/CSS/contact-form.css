@@ -4,7 +4,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    height: 56%;
+    /* height: 56%; */
     transform: translate(-50%, -50%) scale(0);
     transition: 400ms ease-in-out;
     border: 1px solid black;
@@ -12,7 +12,7 @@
     z-index: 10;
     background-color: #ECF9FF;
     width: 500px;
-    max-width: 60%;
+    max-width: 600px;
     visibility: hidden;
 }
 
@@ -34,7 +34,7 @@
 .modal-header .title {
 
     margin-left: 37%;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: bold;
 }
 
@@ -50,6 +50,7 @@
     font-size: 1.25rem;
     font-weight: bold;
     margin-top: -1px;
+    resize: both;
 }
 
 
@@ -81,7 +82,7 @@
     width: 45%;
 } 
 
-.modal-body form button {
+.modal-body form .btn-send {
 
     background: #6EDCD9;
     background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
@@ -99,7 +100,7 @@
     border: solid #6EDCD9 2px;
     position: relative;
     width: 50%;
-    top: 0.4rem;
+    bottom: 8px;
 }
 
 #overlay {
@@ -111,8 +112,8 @@
     right: 0;
     bottom: 0;
     transition: 400ms ease-in-out;
-    background-color: rgba(0, 0, 0, .5);
-    /* backdrop-filter: blur(2px); */
+    /* background-color: rgba(0, 0, 0, .5); */
+    backdrop-filter: blur(2px);
     pointer-events: none;
 
 }
@@ -121,3 +122,13 @@
     opacity: 1;
     pointer-events: all;
 }
+
+/* When screen is smaller than 600px make the labels and input fields smaller. Reponsive */
+/* @media screen and (max-width: 600px) {
+    .label, .input, textarea {
+
+        font-size: 1rem;
+        
+
+    }
+} */

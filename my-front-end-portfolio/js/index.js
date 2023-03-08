@@ -11,7 +11,7 @@ openModalBtns.forEach(button => {
 
         const modal = document.querySelector(button.dataset.modalTarget);
         openModal(modal);
-        $('.modal').css('visibility', 'visible')
+        $('.modal').css('visibility', 'visible') // Jquery
     })
 })
 
